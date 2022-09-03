@@ -175,21 +175,10 @@
     });
 </script>
 <script type="text/javascript">
-var result = navigator.userAgent.toLowerCase();
-var isphone = result.indexOf("phone") > -1;
-var islumia = result.indexOf("lumia") > -1;
-document.writeln(result);
-if(isphone)
-{
-​
-document.writeln('bạn đang truy cập web bằng điện thoại');​
-}
-if(islumia)
-{​
-document.writeln('bạn đang truy cập web bằng điện thoại nokia lumia');
-​
-}
-​
-</script>
+        var uagent = navigator.userAgent.toLowerCase();
+       if (uagent.search("iphone") > -1)
+          alert('true');
+       else
+          alert('false');
 </body>
 </html>
